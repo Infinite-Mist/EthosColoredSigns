@@ -1,0 +1,8 @@
+error:
+  player-only: "&c(!) Only players can execute that command."
+  not-sign: "&c(!) The block you are looking at is not a sign."
+  invalid-line: "&c(!) The line index must be between 1 and 4."
+
+broadcast-enabled: "&aEthos Signs is now enabled!"
+broadcast-disabled: "&cEthos Signs is now disabled!"
+successful-edit: "&aSuccessfully changed the sign."

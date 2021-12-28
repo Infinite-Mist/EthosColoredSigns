@@ -1,0 +1,63 @@
+name: EthosColoredSigns
+description: plugin to use color codes on signs
+
+main: com.mist.ethoscoloredsigns.EthosColoredSigns
+version: 1.2
+api-version: 1.13
+author: Mist
+
+commands:
+  edit-sign:
+    description: Edit a sign that you are looking at.
+    permission: colored.signs.command.edit-sign
+    usage: /<command> <line> <text...>
+    aliases:
+      - editsign
+      - signedit
+      - signeditor
+      - modifysign
+
+permissions:
+  Ethossigns.command.edit-sign:
+    description: Access to the '/edit-sign' command.
+    default: op
+
+  Ethossigns.all:
+    description: Gives access to all sign colors and formatting.
+    default: op
+    children:
+      signs.color.all: true
+      signs.format.all: true
+
+  Ethossigns.color.all:
+    description: Gives access to all sign colors.
+    default: op
+    children:
+      signs.color.0: true
+      signs.color.1: true
+      signs.color.2: true
+      signs.color.3: true
+      signs.color.4: true
+      signs.color.5: true
+      signs.color.6: true
+      signs.color.7: true
+      signs.color.8: true
+      signs.color.9: true
+      signs.color.a: true
+      signs.color.b: true
+      signs.color.c: true
+      signs.color.d: true
+      signs.color.e: true
+      signs.color.f: true
+      signs.color.hex: true
+
+  Ethossigns.format.all:
+    description: Gives access to all sign formatting
+    default: op
+    children:
+      signs.format.k: true
+      signs.format.l: true
+      signs.format.m: true
+      signs.format.n: true
+      signs.format.o: true
+      signs.format.r: true
